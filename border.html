@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /*body {
+                box-sizing: border-box;
+                color: #000;
+            }*/
+            .left{
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 5px;
+                background: black;
+                position: fixed;
+                
+            }
+            .right {
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 5px;
+                background: black;
+                position: fixed;
+            }
+            .bottom {
+                width: auto;
+                background: black;
+                position: fixed;
+                height: 25px;
+                right: 0;
+                left: 0;
+                display: block;
+                bottom: 0;
+                z-index: 102;
+                
+
+            }
+            .content {
+                text-align: center;
+                
+              
+            }
+            #xx {
+                width: 20%;
+                height: auto;
+                position: absolute; 
+                border: 4px solid #000;
+                border-radius: 15px;
+                transition:  width 5s, height 5s,transform 2s;
+               
+              
+            }
+            #eight {
+                width: 18%;
+                height: auto;
+               position: relative;
+               top: 30px;
+               left: 7px;
+               border: 4px solid #000;
+                border-radius: 15px;
+                transition: width 5s,height 5s, transform 2s;
+               
+              
+            }
+            #seven {
+                width: 15%;
+                height: auto;
+                position: absolute;
+                left:45%;
+                   display: none; 
+                   border: 4px solid #000;
+                border-radius: 15px;
+                
+                  
+                 
+            }
+           
+            .p1 {
+               
+               left: 0;
+               
+                
+            }
+            .p2 {
+                
+                float: right;
+                
+            }
+            /* #grad1 {
+                height: auto;
+                width: 100%;
+                background-color: red; 
+                background-image: radial-gradient(red, yellow, green); 
+            }
+            */
+            .rotate1 {
+                
+               
+                /* transform: rotate(-20deg);  */
+                
+                transform: rotate(360deg);
+                 left:10px; 
+               /* width: 500px;
+               height: 300px;  */
+            }
+            .rotate2 {
+                
+                /* transform: rotate(20deg);  */
+                transform: rotate(-360deg);
+               float: right;
+               /* width: 500px;
+               height: 300px;
+                */
+            }
+
+            /* .myDiv {
+                -webkit-transform: rotateX(150deg); 
+                transform: rotateX(150deg); 
+            
+                left:10px;
+            }
+            */
+            .lastElement {
+                margin: 0 auto;
+            }
+            #last {
+               
+                width: 20%;
+                height: auto;
+            }
+             .change {
+                
+                 width: 10%;
+                height: auto;  
+                position: relative;
+                
+                animation-name: example;
+                animation-duration: 3s;
+            } 
+            @keyframes example {
+    0%   {transform:rotateX(0deg); left:0px; top:0px;}
+    25%  {transform:rotateX(90deg); left:900px; top:0px;}
+    50%  {transform:rotateX(180deg); left:900px; top:900px;}
+    75%  {transform:rotateX(270deg); left:0px; top:900px;}
+    100% {transform:rotateX(360deg); left:0px; top:0px;}
+}
+           
+        </style>
+    </head>
+    <body style="height:1500px;background: #cff">
+        <div class="container">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+            <h1 style="text-align:center;font-size:24px;text-transform:capitalize">apple</h1>
+            </div>
+            <div class="content">
+               
+                <img src="x.jpg" alt="iphone1" id="xx">
+               
+                <img src="8.jpg" alt="iphone2" id="eight"> 
+                <img src="seven.jpg" alt="iphone" id="seven">
+            </div>
+
+            <h1 style="text-align: center;margin-top-50px;">apple</h1>
+            <div class="lastElement">
+            <!-- <img src="final.jpg" alt="iphonelast" id="last"> -->
+            </div>
+          
+                
+            
+       
+
+        <script>
+                window.onscroll = function() {myFunction()};
+                
+                function myFunction() {
+                    if ((document.body.scrollTop > 50 && document.body.scrollTop <400) || 
+                    (document.documentElement.scrollTop > 50 && document.documentElement.scrollTop < 400)) {
+                        document.getElementById("xx").className = "rotate1";
+                        document.getElementById("eight").className = "rotate2";
+                        //document.getElementById("xx").className = "p1";
+                        //document.getElementById("eight").className = "p2";
+                        document.getElementById("seven").style.display = "inline-block";
+                        //document.getElementById("last").className="change";
+                    } else {
+                        document.getElementById("xx").className = "";
+                        document.getElementById("eight").className = "";
+                        document.getElementById("seven").style.display= "none";
+                         //document.getElementById("last").className="";
+                    }
+                }
+
+
+                    // window.onscroll = function() {high()};
+                    // function high() {
+                    //     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    //     document.getElementById("last").className="change";
+                    //     } else {
+                    //         document.getElementById("last").className="";
+                    //     }
+                    // }
+
+            </script>
+                
+    </body>
+</html>
