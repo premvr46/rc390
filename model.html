@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background: #cff;
+            }
+            .main-model {
+                width: 100%;
+                margin: 0 auto;
+                /* border: 2px solid #000; */
+                position: relative;
+                background: #cff;
+                height: 80%;
+                display: inline-block;
+                padding: 30px;
+            }
+            /* .main-model:hover {
+                float: left;
+            } */
+            .model1 {
+                width: 10%;
+               border: 2px solid #000;
+               position: absolute;
+                background: red;
+                left: 40%;
+                /* top: 60px;  */
+                top:0; 
+            }
+            /* .model1:hover , .model2:hover {
+                float:left;
+            } */
+            .model2 {
+                width: 10%;
+                border: 2px solid #000;
+                position: absolute;
+                background: blue;
+                left: 40%;
+                top:0; 
+                 /* top: 60px;  */
+
+            } 
+            .model3 {
+                width: 10%;
+                border: 2px solid #000;
+                position: absolute;
+                background: black;
+                left: 40%;
+                 /* top: 60px;  */
+                top:0; 
+            }
+            .mo {
+                left:0;
+                /* top: 40px; */
+               
+                transition:  1s ease-in-out 0s;
+            }
+            .mo2 {
+                left: 70%;
+                transition:  1s ease-in-out 0s;
+            }
+            .mo3 {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-model">
+            <div class="model1">
+                <h2>hello</h2>
+                <p>tiz s model</p>
+            </div>
+            <div class="model2">
+                    <h2>hello</h2>
+                    <p>tiz s model2</p>
+            </div>
+            <div class="model3">
+                    <h2>hello</h2>
+                    <p>tiz s model2</p>
+            </div>
+        </div>
+          <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".main-model").mouseenter(function(){
+                     $(".model1").addClass("mo");
+                    $(".model2").addClass("mo2");
+                    $(".model3").addClass("mo3");
+                }),
+                $(".main-model").mouseleave(function(){
+                     $(".model1").removeClass("mo");
+                    $(".model2").removeClass("mo2");
+                    $(".model3").removeClass("mo3");
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+ var date=new Date();
+
+var lastday=firstday+6;
+
+var last=new Date(date.setDate(lastday)).toUTCString();
+
+alert(last);
+var lastday=function(y,m)
+{
+    return new Date(y,m+1,0).getDate();
+}
+console.log(lastday(2018,8));

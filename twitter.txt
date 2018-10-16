@@ -1,0 +1,20 @@
+<div class="timeline-Tweet-author ">
+    <a class="TweetAuthor-avatar  Identity-avatar u-linkBlend" data-scribe="element:user_link" href="https://twitter.com/TwitterAPI" aria-label="Twitter API (screen name: TwitterAPI)"><img class="Avatar Avatar--edge" data-scribe="element:avatar" data-src-2x="https://pbs.twimg.com/profile_images/942858479592554497/BbazLO9L_bigger.jpg" alt="" data-src-1x="https://pbs.twimg.com/profile_images/942858479592554497/BbazLO9L_normal.jpg" src="https://pbs.twimg.com/profile_images/942858479592554497/BbazLO9L_normal.jpg"></a>
+
+    
+
+
+<div class="TweetAuthor js-inViewportScribingTarget" data-scribe="component:author">
+  <a class="TweetAuthor-link Identity u-linkBlend" data-scribe="element:user_link" href="https://twitter.com/TwitterAPI" aria-label="Twitter API (screen name: TwitterAPI)">
+    <div class="TweetAuthor-nameScreenNameContainer">
+      <span class="TweetAuthor-decoratedName">
+        <span class="TweetAuthor-name Identity-name customisable-highlight" title="Twitter API" data-scribe="element:name">Twitter API</span>
+        <span class="TweetAuthor-verifiedBadge" data-scribe="element:verified_badge"><div class="Icon Icon--verified " aria-label="Verified Account" title="Verified Account" role="img"></div>
+<b class="u-hiddenVisually">✔</b></span>
+      </span>
+      <span class="TweetAuthor-screenName Identity-screenName" title="@TwitterAPI" data-scribe="element:screen_name" dir="ltr">@TwitterAPI</span>
+    </div>
+  </a>
+</div>
+
+  </div>

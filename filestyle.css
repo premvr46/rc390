@@ -1,0 +1,104 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.heading {
+    margin-top: 0;
+}
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: arial;
+    color: #00174f;
+    display: inline-block;
+    width: 50%; 
+   
+}
+.store {
+    font-family: arial;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 25%; 
+    font-size:14px;
+    margin-top:0;
+    color: #00174f;
+}
+.signin {
+    font-family: arial;
+    display: inline;
+    text-transform: uppercase;
+    color: #00174f;
+    font-size:14px;
+    
+}
+header {
+   
+    background: #fcc;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   text-align: center;
+ 
+}
+li {
+    float: left;
+   
+}
+li a {
+    display: inline;
+    color: #000;
+    text-align: center;
+    padding: 20px 70px;  
+    
+    text-decoration: none;
+}
+.first, .second, .third {
+    font-size:24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ul:first-child { 
+    padding-left:30%;
+}
+.header--element {
+    border-top: 3px solid  rgb(243, 124, 124);
+    border-bottom: 3px solid  rgb(243, 124, 124);
+}
+li a:hover {
+    background-color: rgb(228, 174, 57);
+}
+.bags {
+    color:  #ff0000;
+    letter-spacing: 3px;
+    font-size: 14px;
+ 
+}
+.bags, .makeup {
+    font-family:FuturaStdBold,Futura,Calibri,sans-serif;
+    
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.makeup {
+    letter-spacing: 7px;
+    color:  #00174f;
+    font-size: 22px;
+}
+.extra {
+    /* margin: 20px 0 0 30px; */
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    line-height: 40px;
+    margin-left: 40px;
+}

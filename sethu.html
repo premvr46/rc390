@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th ,td {
+               
+                border: 2px solid #000;
+               
+                border-collapse: collapse;
+               width: 12%;
+            }
+            table {
+                margin: 0 auto;
+            }
+            th,td {
+              
+                padding: 10px;
+            }
+            .p {
+                width: 12%;
+                margin: 0 auto;
+                border: 2px solid #000;
+                text-align: center;
+                padding: 10px;
+                background: #cff;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>
+                    prj num
+                </th>
+                <th>
+                    prj name
+                </th>
+            </tr>
+           
+        </table>
+        <div class="p">
+                hello
+            </div>
+            <table class="prem">
+                <tr>
+                    <td>46
+                    </td>
+                    <td>prem
+                    </td>
+                </tr>
+            </table>
+            <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+            <script>
+                $(document).ready(function(){
+                    $(".p").click(function(){
+                        $(".prem").toggle();
+                    });
+                });
+            </script>
+    </body>
+</html>

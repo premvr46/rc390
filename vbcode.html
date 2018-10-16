@@ -1,0 +1,296 @@
+<html>
+<body>
+    <script>
+    /*var prem=['lara','vr','rossi'];
+
+    prem.forEach(value,index){
+       console.log('your name is'+value+'correct');
+    }*/
+
+
+
+    /*var i,j,row=5,element=1;
+
+    for(var i=1;i<=row;i++){
+
+        for(j=1;j<=i;j++){
+            document.write(element );
+            element++;
+       
+     }
+    document.write("<br />");
+    }
+    */
+
+    /*var num=9952;
+    var ld=0;
+    var sd=0;
+
+    while(num!=0) {
+    ld=num%10;
+    sd=sd+ld;
+    num=parseInt(num/10);
+    }
+    document.write("sum of num is:",sd,"<br />");*/
+
+    /*function prem(ogarray){
+        if(ogarray.length<=1){
+            return ogarray;
+        }
+        else{
+            var left=[];
+            var right=[];
+            var newarray=[];
+            var pivot=ogarray.pop();
+            var length=ogarray.length;
+
+            for( var i=0;i<length;i++){
+                if(ogarray[i]<=pivot){
+                    left.push(ogarray[i]);
+                }
+                else{
+                    right.pop(ogarray[i]);
+                }
+            }
+            return newarray.concat(prem(left),pivot,prem(right));
+        }
+    }
+
+    var myarray=[88,9,46,23];
+    console.log("originl array", myarray);
+    var sortedarray=prem(myarray);
+    console.log("array",sortedarray);*/
+
+            
+     /* var a=-5;
+      var b=-2;
+      var c=46;
+      var d=0;
+      var e=-1;
+
+      if(a>b && a>c && a>d && a>e){
+          alert("a is bigger");
+      }
+      else if(b>a && b>c && b>d && b>e){
+        alert("b is bigger");
+        }
+        else if(c>a && c>b && c>d && c>e){
+            alert("c is bigger");
+        }
+        else if(d>a && d>c && d>b && d>e){
+            alert("d is bigger");
+        }
+        else{
+            alert("e is igger")
+        } */
+
+        /*var sum=0;
+
+        for(i=0;i<1000;i++){
+            if(i%3===0||i%5===0){
+                sum +=i;
+
+            }
+        }
+        console.log(sum);*/
+
+        /*function prem(str){
+            if(str<4){
+                return str;
+                }
+                front=str.substring(0,4);
+                if(front=='java'){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+        }
+        console.log(prem("html"));
+        console.log(prem("java"));
+        console.log(prem("sql"));*/
+
+
+       /* var range=function(strtnum,endnum){
+            if(endnum-strtnum===2){
+                    return[strtnum+=1];
+            }
+            else{
+                var list=range(strtnum,endnum-1);
+                list.push(endnum-1);
+                return list;
+            }
+        };
+        console.log(range(2,10));*/
+
+
+/*const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, y)) !== -1);
+console.log(intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)));*/
+
+
+/*function calculate_age(dob) { 
+    var diff_ms = Date.now() - dob.getTime();
+    var age_dt = new Date(diff_ms); 
+  
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
+}
+
+console.log(calculate_age(new Date(1982, 11, 4)));
+
+console.log(calculate_age(new Date(1962, 1, 1)));*/
+
+
+
+  /*function vowel_count(str1)
+{
+  var vowel_list = 'aeiouAEIOU';
+  var vcount = 0;
+  
+  for(var x = 0; x < str1.length ; x++)
+  {
+    if (vowel_list.indexOf(str1[x]) !== -1)
+    {
+      vcount += 1;
+    }
+  
+  }
+  return vcount;
+}
+console.log(vowel_count("The quick brown fox"));*/
+
+
+    /*function Char_Counts(str1) {
+var uchars = {};
+str1.replace(/\S/g, function(l){uchars[l] = (isNaN(uchars[l]) ? 1 : uchars[l] + 1);});
+return uchars;
+}
+console.log(Char_Counts("The quick brown fox jumps over the lazy dog"));*/
+
+
+
+   /* function alphabet_Soup(str) { 
+
+return str.split("").sort().join("");
+     
+}
+
+console.log(alphabet_Soup("Python"));
+
+console.log(alphabet_Soup("premvr"));*/
+
+
+/*
+
+  function capital_letter(str) 
+{
+    str = str.split(" ");
+
+    for (var i = 0, x = str.length; i < x; i++) {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(" ");
+}
+
+console.log(capital_letter("Write a JavaScript program to capitalize the first letter of each word of a given string."));*/ 
+   
+
+  /* var x=3;
+var y=7;
+var z=2;
+if (x>0 && y>0 && z>0)
+{
+       alert("The sign is +");
+}
+else if (x<0 && y<0 && z<0)
+        {
+          console.log("The sign is +");
+        }
+        else if (x>0 && y<0 && z<0)
+        {
+          console.log("The sign is +");
+        }
+        else if (x<0 && y>0 && z<0)
+        {
+          console.log("The sign is +");
+        }
+        else
+        {
+          console.log("The sign is -");
+        }  */
+
+
+
+        
+  /*for (var x=0; x<=15; x++) {
+        if (x === 0) {
+                console.log(x +  " is even");
+        }
+        else if (x % 2 === 0) {
+                console.log(x + " is even");   
+        }
+        else {
+                console.log(x + " is odd");
+        }
+}
+*/
+
+
+   /* truncate_string = function (str1, length) {
+  
+  if ((str1.constructor === String) && (length>0)) {
+      return str1.slice(0, length);
+  }
+};
+console.log(truncate_string("prem vr",4)); */
+
+
+   /* function power_of_2(n) {
+ if (typeof n !== 'number') 
+      return 'Not a number'; 
+
+    return n && (n & (n - 1)) === 0;
+}
+
+console.log(power_of_2(16));
+console.log(power_of_2(18));
+console.log(power_of_2(256));*/
+  
+
+    function merge_sort(left_part,right_part) 
+{
+	var i = 0;
+	var j = 0;
+	var results = [];
+
+	while (i < left_part.length || j < right_part.length) {
+		if (i === left_part.length) {
+			
+			results.push(right_part[j]);
+			j++;
+		} 
+      else if (j === right_part.length || left_part[i] <= right_part[j]) {
+			results.push(left_part[i]);
+			i++;
+		} else {
+			results.push(right_part[j]);
+			j++;
+		}
+	}
+	return results;
+}
+
+console.log(merge_sort([1,8,4], [3,7,9]));
+
+
+
+		
+
+
+
+
+
+    </script>
+</body>
+
+</html>
